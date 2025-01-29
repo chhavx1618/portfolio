@@ -20,10 +20,10 @@ const AboutPage = () => {
         <div className="bg-black bg-opacity-5 rounded-lg p-8 backdrop-filter backdrop-blur-sm">
           <div className="text-center mb-12">
             <Image
-              src="/placeholder.svg?height=200&width=200"
+              src="./me.svg"
               alt="Chhavi Arora"
-              width={200}
-              height={200}
+              width={300}
+              height={300}
               className="rounded-full mx-auto mb-4 bg-gray-300"
             />
             <h1 className="text-4xl font-bold mb-2">Chhavi Arora</h1>
@@ -34,14 +34,14 @@ const AboutPage = () => {
 
           <Section title="About Me">
             <p>
-            I'm a passionate individual, interested in learning and challenging myself continously. I am currently working in full stack development, devops, and IoT applications. More recently, I have been dabbling in AR/VR technologies. I have created serveral projects and have worked in these fields extensively, and continue doing so. 
+            I'm a passionate individual, interested in learning and challenging myself continously. I am currently working in full stack development, devops, and IoT applications. More recently, I have been dabbling in AR/VR technologies. I have created several projects and have worked in these fields extensively, and continue doing so. 
             </p>
           </Section>
 
-          <Section title="Achievments & Experience">
+          <Section title="Achievements & Experience">
             <ul className="list-disc pl-5 space-y-2">
               <li>
-                [UX/UI Designer] at [Fit4Sure], where I [Designed a mobile app and redesigned a web app using Figma and related tools].
+                UX/UI Designer at Fit4Sure, where I Designed a mobile app and redesigned a web app using Figma and related tools.
               </li>
               <li>Certification in Docker, Fundamentals of DevOps from KodeKloud.</li>
               <li>Current IRP Lead of the E-Cell, IIITV and previous member of the SSIP Cell, IIITV</li>
@@ -52,10 +52,10 @@ const AboutPage = () => {
 
           <Section title="Skills">
             <ul className="list-disc pl-5 space-y-2">
-              <li>[Full Stack Development - ReactJS/NextJs, NodeJS, MongoDB]</li>
-              <li>[Docker, Jenkins, CI/CD tools, Github & Git]</li>
-              <li>[Figma, Canva, and similar designing tools]</li>
-              <li>[Shopify Ecommerce Development]</li>
+              <li>Full Stack Development - ReactJS/NextJs, NodeJS, MongoDB</li>
+              <li>Docker, Jenkins, CI/CD tools, Github & Git</li>
+              <li>Figma, Canva, and similar designing tools</li>
+              <li>Shopify Ecommerce Development</li>
             </ul>
           </Section>
 

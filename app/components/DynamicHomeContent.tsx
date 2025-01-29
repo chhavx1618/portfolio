@@ -14,7 +14,7 @@ const projects = [
     id: 1,
     title: "ZenZone",
     description: "A Virtual Reality based Exercise and Physiotherapy System",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "./vr.svg",
     details:
       "A VR system for exercise and physiotherapy with live data sharing and report generation, along with real-time suggestions and feedback.",
     link: "https://github.com/ZenZone-Rehab",
@@ -23,7 +23,7 @@ const projects = [
     id: 2,
     title: "Cli-Client",
     description: "A command-line interface for an API testing tool",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "./code2.svg",
     details:
       "Written in Js, and distributed as an NPM package, this is a simple tool for testing your projects API right from the command line.",
     link: "https://www.npmjs.com/package/cli-client-chhx",
@@ -32,7 +32,7 @@ const projects = [
     id: 3,
     title: "Zocker",
     description: "A simple implementation of Docker in Golang for learning purposes",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "./code1.svg",
     details:
       "A basic implementation of Docker written in Golang to teach and understand the concepts of containerization and isolation",
     link: "https://github.com/chhavx1618/zocker",
@@ -55,18 +55,19 @@ export default function DynamicHomeContent() {
     <>
       <BubbleEffect />
       <div className="min-h-screen flex flex-col relative z-10">
-        <section className="flex-grow flex flex-col md:flex-row items-center justify-center p-8 mb-20 mt=20">
-          <div className="md:w-1/2 flex justify-center items-center">
-            <div className="rounded-full overflow-hidden border-4 border-indigo-500 w-64 h-64 md:w-80 md:h-80 transition-transform duration-300 hover:scale-105">
-              <Image
-                src="/placeholder.svg"
-                alt="Chhavi"
-                width={320}
-                height={320}
-                className="object-cover w-full h-full"
-              />
+        <section className="flex-grow flex flex-col md:flex-row items-center justify-center p-8 mb-20 mt-20">
+        <div className="md:w-1/2 flex justify-center items-center">
+          <div className="rounded-full overflow-hidden border-4 border-indigo-500 w-96 h-96 ml-10 md:w-[500px] md:h-[500px] transition-transform duration-300 hover:scale-105">
+            <Image
+              src="./me.svg"
+              alt="Chhavi"
+              width={600} // Increase the width
+              height={600} // Increase the height
+              className="object-cover w-full h-full"
+            />
             </div>
           </div>
+
           <div className="md:w-1/2 p-8 md:pr-16">
             <h2 className="text-2xl md:text-3xl text-indigo-400 mb-4">Hi!</h2>
             <h1 className="text-4xl md:text-6xl font-bold mb-4">I'm Chhavi</h1>
