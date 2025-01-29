@@ -7,39 +7,48 @@ import Image from "next/image"
 const projects = [
   {
     id: 1,
-    title: "AI-Powered Code Assistant",
-    description: "An intelligent coding companion using GPT-4 to assist developers.",
+    title: "ZenZone",
+    description: "A Virtual Reality based Exercise and Physiotherapy System",
     image: "/placeholder.svg?height=300&width=400",
     details:
-      "This project integrates OpenAI's GPT-4 into a VS Code extension, providing real-time code suggestions, bug detection, and natural language to code conversion. It significantly boosts developer productivity and code quality.",
-    link: "https://github.com/chhavi/ai-code-assistant",
+      "A VR system for exercise and physiotherapy with live data sharing and report generation, along with real-time suggestions and feedback.",
+    link: "https://github.com/ZenZone-Rehab",
   },
   {
     id: 2,
-    title: "Neural Network Visualizer",
-    description: "An interactive web app for visualizing and explaining neural networks.",
+    title: "Cli-Client",
+    description: "A command-line interface for an API testing tool",
     image: "/placeholder.svg?height=300&width=400",
     details:
-      "Built with React and D3.js, this tool allows users to construct, train, and visualize neural networks in real-time. It's designed to make complex AI concepts more accessible to beginners and experts alike.",
-    link: "https://github.com/chhavi/neural-net-viz",
+      "Written in Js, and distributed as an NPM package, this is a simple tool for testing your projects API right from the command line.",
+    link: "https://www.npmjs.com/package/cli-client-chhx",
   },
   {
     id: 3,
-    title: "Sentiment Analysis Dashboard",
-    description: "Real-time sentiment analysis of social media trends using AI.",
+    title: "Zocker",
+    description: "A simple implementation of Docker in Golang for learning purposes",
     image: "/placeholder.svg?height=300&width=400",
     details:
-      "This full-stack application uses natural language processing to analyze sentiment across various social media platforms. Built with Node.js, React, and TensorFlow.js, it provides valuable insights for businesses and researchers.",
-    link: "https://github.com/chhavi/sentiment-dashboard",
+      "A basic implementation of Docker written in Golang to teach and understand the concepts of containerization and isolation",
+    link: "https://github.com/chhavx1618/zocker",
   },
   {
     id: 4,
-    title: "AI-Driven Personal Finance Manager",
-    description: "An intelligent financial planning and analysis tool.",
+    title: "Crochet Treasures",
+    description: "An functioning ecommerce shop designed and built with Shopify as per the requirements of the client. The shop is specialized for crochet and handmade products",
     image: "/placeholder.svg?height=300&width=400",
     details:
-      "Leveraging machine learning algorithms, this application provides personalized financial advice, predicts future expenses, and helps users optimize their budgets. It integrates with various banking APIs and uses React Native for a seamless mobile experience.",
-    link: "https://github.com/chhavi/ai-finance-manager",
+      "A Shopify website designed and built for ecommerce application, fully complete with payment support, customer notifications, domain configuration, DNS management, custom email, marketing, and various other features.",
+    link: "https://crochettreasures.in/",
+  },
+  {
+    id: 5,
+    title: "JanRakshak",
+    description: "An Advanced Drone, IoT and 5G based Disaster Monitoring System",
+    image: "/placeholder.svg?height=300&width=400",
+    details:
+      "Using Drone monitoring, sensor data and 5G networking to monitor and deliver live updates of possible disasters (earthquakes, fires and floods) through a single user interface for prompt action",
+
   },
 ]
 

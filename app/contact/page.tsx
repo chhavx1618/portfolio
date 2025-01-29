@@ -43,7 +43,7 @@ const ContactPage = () => {
         transition={{ duration: 0.5 }}
         className="max-w-lg mx-auto"
       >
-        <h1 className="text-4xl font-bold mb-8 text-center text-white">Contact Me</h1>
+        <h1 className="text-4xl font-bold mt-10 mb-8 text-center text-white">Contact Me</h1>
         <form onSubmit={handleSubmit} className="space-y-6 bg-gray-800 p-8 rounded-lg shadow-lg mt-10">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-300">
