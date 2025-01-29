@@ -31,9 +31,9 @@ const Navbar = () => {
           </div>
           <div className="hidden md:block">
             <div className="ml-4 flex items-center md:ml-6">
-              <SocialIcon href="https://github.com/chhavi" icon={<FaGithub />} />
-              <SocialIcon href="https://linkedin.com/in/chhavi" icon={<FaLinkedin />} />
-              <SocialIcon href="https://twitter.com/chhavi" icon={<FaTwitter />} />
+              <SocialIcon href="https://github.com/chhavx1618" icon={<FaGithub />} />
+              <SocialIcon href="https://www.linkedin.com/in/chhavi-arora-b2483127a/" icon={<FaLinkedin />} />
+              <SocialIcon href="hhttps://x.com/Chhax1618" icon={<FaTwitter />} />
             </div>
           </div>
         </div>
