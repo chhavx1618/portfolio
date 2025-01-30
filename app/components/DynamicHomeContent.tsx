@@ -5,7 +5,7 @@ import dynamic from "next/dynamic"
 import Link from "next/link"
 import Image from "next/image"
 import SkillsCarousel from "./SkillsCarousel"
-import { useRef, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 
 const BubbleEffect = dynamic(() => import("./BubbleEffect"), { ssr: false })
 
@@ -14,7 +14,7 @@ const projects = [
     id: 1,
     title: "ZenZone",
     description: "A Virtual Reality based Exercise and Physiotherapy System",
-    image: "./vr.svg",
+    image: "./vr.png",
     details:
       "A VR system for exercise and physiotherapy with live data sharing and report generation, along with real-time suggestions and feedback.",
     link: "https://github.com/ZenZone-Rehab",
@@ -23,7 +23,7 @@ const projects = [
     id: 2,
     title: "Cli-Client",
     description: "A command-line interface for an API testing tool",
-    image: "./code2.svg",
+    image: "./code2.png",
     details:
       "Written in Js, and distributed as an NPM package, this is a simple tool for testing your projects API right from the command line.",
     link: "https://www.npmjs.com/package/cli-client-chhx",
@@ -32,7 +32,7 @@ const projects = [
     id: 3,
     title: "Zocker",
     description: "A simple implementation of Docker in Golang for learning purposes",
-    image: "./code1.svg",
+    image: "./code1.png",
     details:
       "A basic implementation of Docker written in Golang to teach and understand the concepts of containerization and isolation",
     link: "https://github.com/chhavx1618/zocker",
@@ -56,26 +56,24 @@ export default function DynamicHomeContent() {
       <BubbleEffect />
       <div className="min-h-screen flex flex-col relative z-10">
         <section className="flex-grow flex flex-col md:flex-row items-center justify-center p-8 mb-20 mt-20">
-        <div className="md:w-1/2 flex justify-center items-center">
-          <div className="rounded-full overflow-hidden border-4 border-indigo-500 w-96 h-96 ml-10 md:w-[500px] md:h-[500px] transition-transform duration-300 hover:scale-105">
-            <Image
-              src="./me.svg"
-              alt="Chhavi"
-              width={600} // Increase the width
-              height={600} // Increase the height
-              className="object-cover w-full h-full"
-            />
+          <div className="w-full md:w-1/2 flex justify-center items-center">
+            <div className="rounded-full overflow-hidden border-4 border-indigo-500 w-72 h-72 sm:w-96 sm:h-96 md:w-[500px] md:h-[500px] transition-transform duration-300 hover:scale-105">
+              <Image
+                src="./me.png"
+                alt="Chhavi"
+                width={600}
+                height={600}
+                className="object-cover w-full h-full"
+              />
             </div>
           </div>
 
-          <div className="md:w-1/2 p-8 md:pr-16">
+          <div className="w-full md:w-1/2 p-4 sm:p-8 md:pr-16 text-center md:text-left">
             <h2 className="text-2xl md:text-3xl text-indigo-400 mb-4">Hi!</h2>
             <h1 className="text-4xl md:text-6xl font-bold mb-4">I'm Chhavi</h1>
             <h2 className="text-2xl md:text-3xl text-indigo-400 mb-4">Full Stack Development & DevOps</h2>
-            <p className="text-lg mb-8">
-              Crafting elegant solutions at the intersection of code and creativity.
-            </p>
-            <div className="flex items-center mb-4">
+            <p className="text-lg mb-8">Crafting elegant solutions at the intersection of code and creativity.</p>
+            <div className="flex flex-col sm:flex-row items-center sm:items-start mb-4">
               <span className="mr-4">Slide for bubbles:</span>
               <button
                 onClick={toggleBubbles}
@@ -96,7 +94,7 @@ export default function DynamicHomeContent() {
         <section className="bg-gray-800 py-16 relative z-10 mt-20 mb-20">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8 text-center">Featured Work</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project) => (
                 <WorkCard key={project.id} project={project} />
               ))}

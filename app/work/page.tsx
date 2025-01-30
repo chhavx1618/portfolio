@@ -9,7 +9,7 @@ const projects = [
     id: 1,
     title: "ZenZone",
     description: "A Virtual Reality based Exercise and Physiotherapy System",
-    image: "./vr.svg",
+    image: "./vr.png",
     details:
       "A VR system for exercise and physiotherapy with live data sharing and report generation, along with real-time suggestions and feedback.",
     link: "https://github.com/ZenZone-Rehab",
@@ -18,7 +18,7 @@ const projects = [
     id: 2,
     title: "Cli-Client",
     description: "A command-line interface for an API testing tool",
-    image: "./code1.svg",
+    image: "./code1.png",
     details:
       "Written in Javascript, and distributed as an NPM package, this is a simple tool for testing your projects API right from the command line.",
     link: "https://www.npmjs.com/package/cli-client-chhx",
@@ -27,7 +27,7 @@ const projects = [
     id: 3,
     title: "Zocker",
     description: "A simple implementation of Docker in Golang",
-    image: "./code2.svg",
+    image: "./code2.png",
     details:
       "A basic implementation of Docker written in Golang to teach and understand the concepts of containerization.",
     link: "https://github.com/chhavx1618/zocker",
@@ -36,7 +36,7 @@ const projects = [
     id: 4,
     title: "Crochet Treasures",
     description: "A functioning E-Commerce shop built with Shopify",
-    image: "./crochet.svg",
+    image: "./crochet.png",
     details:
       "A Shopify website designed and built for eCommerce, fully complete with payment support, notifications, and marketing features.",
     link: "https://crochettreasures.in/",
@@ -45,17 +45,17 @@ const projects = [
     id: 5,
     title: "JanRakshak",
     description: "An Advanced Drone, IoT and 5G based Disaster Monitoring System",
-    image: "./drone.svg",
+    image: "./drone.png",
     details:
       "Using Drone monitoring, sensor data, and 5G networking to monitor and deliver live updates of possible disasters.",
   },
   {
     id: 6,
     title: "Agro-Assist",
-    description: "A simple agriculture assistant with a user interface to monitor soil moisture, humidity and other conditions to optimize plant growth and improve profits",
+    description: "An agriculture assistant to monitor soil and optimize growth.",
     image: "./agro.png",
     details:
-      "Conceptualization of the use of IoT and automation for improving yield and plant growth by optimizing the humidity, soil condition, nutrients, and controlling pests for the best performance.",
+      "Conceptualization of the use of IoT and automation for improving yield and plant growth by optimizing humidity, soil condition, nutrients, and controlling pests.",
   },
 ]
 
@@ -78,15 +78,9 @@ const WorkPage = () => {
         <h1 className="text-4xl font-bold mb-12 mt-10 text-center">My Work</h1>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            index % 4 === 3 ? (
-              // Full-width project (every 4th project)
-              <FullWidthProjectCard key={project.id} project={project} onClick={() => setSelectedProject(project.id)} />
-            ) : (
-              // Normal 3-in-a-row project
-              <ProjectCard key={project.id} project={project} onClick={() => setSelectedProject(project.id)} />
-            )
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} onClick={() => setSelectedProject(project.id)} />
           ))}
         </div>
       </motion.div>
@@ -111,7 +105,7 @@ const WorkPage = () => {
               {projects.find((p) => p.id === selectedProject) && (
                 <>
                   <Image
-                    src={projects.find((p) => p.id === selectedProject)!.image || "/placeholder.svg"}
+                    src={projects.find((p) => p.id === selectedProject)!.image || "/placeholder.png"}
                     alt={projects.find((p) => p.id === selectedProject)!.title}
                     width={600}
                     height={300}
@@ -147,7 +141,7 @@ const ProjectCard = ({ project, onClick }: { project: (typeof projects)[0]; onCl
     onClick={onClick}
   >
     <Image
-      src={project.image || "/placeholder.svg"}
+      src={project.image || "/placeholder.png"}
       alt={project.title}
       width={400}
       height={300}
@@ -156,26 +150,6 @@ const ProjectCard = ({ project, onClick }: { project: (typeof projects)[0]; onCl
     <div className="p-6">
       <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
       <p className="text-gray-400">{project.description}</p>
-    </div>
-  </motion.div>
-)
-const FullWidthProjectCard = ({ project, onClick }: { project: (typeof projects)[0]; onClick: () => void }) => (
-  <motion.div
-    whileHover={{ scale: 1.02 }}
-    whileTap={{ scale: 0.98 }}
-    className="bg-gray-800 rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row md:col-span-3 mb-10 mt-10 cursor-pointer h-52"
-    onClick={onClick}
-  >
-    <Image
-      src={project.image || "/placeholder.svg"}
-      alt={project.title}
-      width={600}
-      height={100}
-      className="w-full md:w-1/3 h-52 object-cover"
-    />
-    <div className="p-4 flex-1 flex flex-col justify-center">
-      <h2 className="text-lg font-semibold mb-1">{project.title}</h2>
-      <p className="text-gray-400 text-sm">{project.description}</p>
     </div>
   </motion.div>
 )

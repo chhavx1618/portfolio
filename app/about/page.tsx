@@ -20,7 +20,7 @@ const AboutPage = () => {
         <div className="bg-black bg-opacity-5 rounded-lg p-8 backdrop-filter backdrop-blur-sm">
           <div className="text-center mb-12">
             <Image
-              src="./me.svg"
+              src="./me.png"
               alt="Chhavi Arora"
               width={300}
               height={300}
