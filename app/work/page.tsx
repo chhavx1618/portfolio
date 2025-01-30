@@ -53,7 +53,7 @@ const projects = [
     id: 6,
     title: "Agro-Assist",
     description: "A simple agriculture assistant with a user interface to monitor soil moisture, humidity and other conditions to optimize plant growth and improve profits",
-    image: "./agro.svg",
+    image: "./agro.png",
     details:
       "Conceptualization of the use of IoT and automation for improving yield and plant growth by optimizing the humidity, soil condition, nutrients, and controlling pests for the best performance.",
   },
